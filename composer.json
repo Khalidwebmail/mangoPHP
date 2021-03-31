@@ -1,0 +1,29 @@
+{
+    "name": "khalidahmed/mangophp",
+    "description": "An open source php framework",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Khalidwebmail",
+            "email": "csewebmail@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "vlucas/phpdotenv": "^3.1"
+    },
+    "config": {
+        "optimize-autoloader": true
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app"
+        },
+        "files": ["app/functions/helper.php"]
+    }
+}
