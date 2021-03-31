@@ -18,6 +18,4 @@ Route::get('greet/(\w+)/title/(\w+)', function( $name, $title ) {
     echo 'Welcome '.' '.$title.' '.$name;
 });
 
-Route::get('price', [\App\Controllers\BaseController::class, 'showPrice']);
-Route::get('price2', '\App\Controllers\BaseController@showPrice');
 Route::cleanup();
