@@ -8,15 +8,14 @@ class BaseController
 {
     private static $instance;
 
-    public function __construct() {
-        self::getInstance();
-    }
-
-    protected static function getInstance() {
-
+    public static function getInstance() {
         if( ! self::$instance ) {
             self::$instance = new self;
         }
         return self::$instance;
+    }
+
+    public function index() {
+        return view('welcome');
     }
 }

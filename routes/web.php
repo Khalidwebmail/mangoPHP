@@ -2,10 +2,10 @@
 
 use App\Classes\Route;
 
-Route::get('/', function () {
-    echo "Welcome home";
-});
-
+//Route::get('/', function () {
+//    return view
+//});
+Route::get('/', [\App\Controllers\BaseController::class, 'index']);
 Route::get('hello/man', function () {
     echo "Welcome man";
 });
