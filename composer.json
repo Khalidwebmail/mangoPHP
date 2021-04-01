@@ -15,6 +15,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
+        "illuminate/database": "^5.4",
         "vlucas/phpdotenv": "^3.1",
         "philo/laravel-blade": "dev-master"
     },
