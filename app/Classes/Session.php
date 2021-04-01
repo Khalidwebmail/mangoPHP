@@ -42,7 +42,7 @@ class Session
     public static function has( $name )
     {
         if( $name != '' && !empty( $name ) ){
-            return ( isset ( $_SESSION[$name ] ) ) ? true : false;
+            return ( isset ( $_SESSION[ $name ] ) ) ? true : false;
         }
 
         throw new \Exception('Name is required');
